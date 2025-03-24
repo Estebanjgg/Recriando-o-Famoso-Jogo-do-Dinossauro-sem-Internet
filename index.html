@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego del Dinosaurio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="overlay" id="startScreen">
+    <h1>Juego del Dinosaurio</h1>
+    <button id="startButton">Iniciar Juego</button>
+  </div>
+
+  <div class="game-container" id="gameContainer">
+
+
+
+    <img class="dinosaur" id="dino" src="images/dinosaur.png" alt="Dinosaur">
+
+    <img class="branch" id="branch" src="images/branch.png" alt="Branch">
+
+
+    <div class="score" id="score">0</div>
+  </div>
+
+
+  <div class="overlay" id="gameOverScreen" style="display: none;">
+    <h1>¡Fin del juego!</h1>
+    <p id="finalScore"></p>
+    <button id="restartButton">Reiniciar Juego</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

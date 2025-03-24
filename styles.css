@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #f7f7f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.game-container {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid #333;
+  background: url('images/landscape.jpg') no-repeat center bottom;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dinosaur {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+
+.branch {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 20px;
+  height: 40px;
+}
+
+
+.score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.overlay h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #28a745;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.overlay button:hover {
+  background: #218838;
+}
+
+
+@media (max-width: 480px) {
+  .game-container {
+    height: 150px;
+  }
+
+  .dinosaur {
+    width: 30px;
+    height: 30px;
+    left: 30px;
+  }
+
+  .branch {
+    width: 15px;
+    height: 30px;
+  }
+
+  .score {
+    font-size: 18px;
+  }
+
+  .overlay h1 {
+    font-size: 2em;
+  }
+
+  .overlay button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+}
